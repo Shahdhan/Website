@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+@keyframes fade-in{
+    from{scale: 0.8; opacity: 0;}
+    to{scale: 1; opacity: 1;}
+}
+
+body{
+    background-color: black;
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+.logo{
+    padding-left: 30px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+
+}
+
+.navbar a{
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+h1{
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 42%;
+    font-size: 60px;
+    border-bottom: solid 3px;
+    height: 80px;
+    width: 250px;
+    border-color: red;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    animation: fade-up 1s;
+}
+
+.main1{
+    animation: fade-up 1s;
+}
+.content{
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    font-size: 30px;
+}
+
+.content p{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 700px;
+    line-height: 30px;
+}
+
+#p2{
+    position: relative;
+    width: 600px;
+    left: 700px;
+    top: 100px;
+}
+video{
+    position: absolute;
+    top: 0px;
+    left: 800px;
+    animation: fade-up 1s;
+}
+#img1{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    animation: fade-up 1s;
+    
+}
+
+#img2{
+    position: absolute;
+    top: 530px;
+    left: 830px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 200px;
+}
+.p3{
+    position: relative;
+    top: 200px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 200px;
+}
+
+.p4{
+    position: relative;
+    top: 350px;
+    left: 700px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 200px;
+}
+#img3{
+    position: absolute;
+    left: 100px;
+    top: 800px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 200px;
+}
+.icons{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(30, 30, 30, 1);
+    position: absolute;
+    top: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 50px;
+}
+.fa-square-x-twitter{
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.fa-square-x-twitter:hover{
+    transform: scale(1.2);
+}
+
+.fa-facebook{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+}
+
+.fa-youtube{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    position: absolute;
+    top: 120px;
+    left: 28%;
+    color: #fff;
+    height: 70px;
+    padding-top: 15px;
+    width: 700px;
+    
+
+}
+.footer a{
+    padding: 40px;
+    transition: 0.3s;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover{
+    cursor: pointer;
+    color: red;
+    position: relative;
+    font-size: 20px;
+}
+
+.design{
+    position:relative;
+    top: 1500px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left:0;
+    color: #fff;
+    background-color: #222222;
+    font-size: 20px;
+
+}

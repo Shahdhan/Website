@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-in{
+    from{scale: 0.8; opacity: 0;}
+    to{scale: 1; opacity: 1;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(Photos/F1.1.jpg);
+    background-color: black;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0%;
+    overflow-x: hidden;
+
+}
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    animation: fade-down 1s;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    animation: fade-down 1s;
+
+}
+
+
+
+.navbar a{
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+/*"BatmanForeverOutline"*/
+h1{
+    font-family:"BatmanForeverOutline", sans-serif;
+    font-size: 105PX;
+    color: red;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: fade-up 1s;
+}
+
+h4{
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 30PX;
+    color: #fff;
+    text-align: center;
+    letter-spacing:2px;
+    animation: fade-up 1s;
+}
+
+
+.Bg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bdy{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo{
+    padding-left: 30px;
+}
+.about{
+    background-color: black;
+    background-size: 50% 100%;
+    height: 400px;
+    width: 100%;
+}
+
+.divv{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    width: 100%;
+}
+
+.divv img{
+    position: absolute;
+    left: 150px;
+    top: 840px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.about h2{
+    padding-left:70.5%;
+    padding-top:6%;
+    color: #fff;
+    font-size: 40px;
+    z-index: 100;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.drivers{
+    background-color: black;
+    height: 375px;
+    width: 100%;
+}
+
+.drivers h2{
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    left: 350px;
+    top: 50px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.drivers p{
+    color: #fff;
+    position: relative;
+    left: 200px;
+    top: 85px;
+    width: 500px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.drivers #im{
+    position: relative;
+    left: 375px;
+    top: 130px;
+    border: solid 2px;
+    border-width: 2px;
+    border-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 red;
+    transition: ease-out 0.4s;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+
+}
+
+.drivers #im:hover{
+    box-shadow: inset 100px 0 0 0 red;
+}
+
+.drivers a{
+    position: absolute;
+    left: 900px;
+    top: 1200px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.teams{
+    background-color:black;
+    height: 375px;
+    width: 100%;
+    color: #fff;
+}
+.teams h2{
+    position: relative;
+    left: 72%;
+    top: 0%;
+    font-size: 40px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.teams p{
+    color: #fff;
+    position: relative;
+    left: 60%;
+    top: 40px;
+    width: 500px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.teams a{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    left: 73.5%;
+    top: 90px;
+    border: solid 2px;
+    border-color: red;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 0 0 red;
+    transition: ease-out 0.3s;
+}
+.teams a:hover{
+    box-shadow: inset 100px 0 0 0 red;
+}
+.teams img{
+    position: absolute;
+    left: 200px;
+    top: 1550px;
+}
+.champ{
+    background-color:black;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+}
+.champ h2{
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    left: 310px;
+    top: 0;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.champ p{
+    color: #fff;
+    position: relative;
+    left: 200px;
+    top: 30px;
+    width: 500px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.champ a{
+    position: relative;
+    left: 400px;
+    top: 80px;
+    border: solid 2px;
+    border-width: 2px;
+    border-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 red;
+    transition: ease-out 0.4s;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.champ a:hover{
+    box-shadow: inset 100px 0 0 0 red;
+}
+.about .par{
+    position: relative;
+    color: #fff;
+    width: 500px;
+    top: 30px;
+    left: 60%;
+    line-height: 30px;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.btn{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    left: 72.5%;
+    top: 70px;
+    
+}
+.btn a{
+    border: solid 2px;
+    border-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 red;
+    transition: ease-out 0.3s;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+.btn a:hover{
+    box-shadow: inset 100px 0 0 0 red;
+}
+.icons{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(30, 30, 30, 1);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 50px;
+}
+.fa-square-x-twitter{
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.fa-square-x-twitter:hover{
+    transform: scale(1.2);
+}
+
+.fa-facebook{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+}
+
+.fa-youtube{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    position: absolute;
+    top: 2350px;
+    left: 28%;
+    color: #fff;
+    height: 70px;
+    padding-top: 15px;
+    width: 700px;
+    
+
+}
+.footer a{
+    padding: 40px;
+    transition: 0.3s;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover{
+    cursor: pointer;
+    color: red;
+    position: relative;
+    font-size: 20px;
+}
+
+.design{
+    position:relative;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left:0;
+    color: #fff;
+    background-color: #222222;
+    font-size: 20px;
+
+}

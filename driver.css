@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@keyframes fade-in{
+    from{scale: 0.8; opacity: 0;}
+    to{scale: 1; opacity: 1;}
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    /* background-image: url(Photos/Background4.png);
+    backdrop-filter: blur(25px); */
+}
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+.logo{
+    padding-left: 30px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+
+}
+
+.navbar a{
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+.headin{
+    color: #fff;
+    border-bottom: solid 3px;
+    border-color: red;
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    animation: fade-up 1s;
+}
+
+.grid{
+    width: 100%;
+    position: relative;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: #fff;
+
+}
+
+.dri1{
+    padding: 25px 15px 15px 0px;
+    height: 500px;
+    width: 350px;
+    border: solid 2px;
+    border-radius: 50px;
+    border-color: red;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.dri1:hover{
+    transform: translateY(-20px);
+}
+
+#s2{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+
+#s1{
+    animation: fade-up 1s;
+}
+
+.lname{
+    font-family: "Abel", sans-serif;
+    font-size: 30px;
+    font-weight: 8000;
+}
+.fname{
+    font-size: 25px;
+    font-weight: 399;
+}
+
+.meetbtn{
+    position: relative;
+    top: 30px;
+    border: solid 2px;
+    border-width: 2px;
+    border-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 red;
+    transition: ease-out 0.4s;
+}
+
+.meetbtn:hover{
+    box-shadow: inset 100px 0 0 0 red;
+}
+
+.icons{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(30, 30, 30, 1);
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 50px;
+}
+.fa-square-x-twitter{
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.fa-square-x-twitter:hover{
+    transform: scale(1.2);
+}
+
+.fa-facebook{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+}
+
+.fa-youtube{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 70px;
+    transition: 0.3s;
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    position: absolute;
+    top: 120px;
+    left: 28%;
+    color: #fff;
+    height: 70px;
+    padding-top: 15px;
+    width: 700px;
+    
+
+}
+.footer a{
+    padding: 40px;
+    transition: 0.3s;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover{
+    cursor: pointer;
+    color: red;
+    position: relative;
+    font-size: 20px;
+}
+
+.design{
+    position:relative;
+    width: 100%;
+    text-align: center;
+    top: 300px;
+    left:0;
+    color: #fff;
+    background-color: #222222;
+    font-size: 20px;
+
+}
